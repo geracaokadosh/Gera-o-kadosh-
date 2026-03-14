@@ -19,8 +19,6 @@ body{
   text-align:center;
   position:relative;
 }
-
-/* Fundo escurecido para contraste do texto */
 body::before{
   content:'';
   position:absolute;
@@ -29,16 +27,12 @@ body::before{
   background: rgba(0,0,0,0.5);
   z-index:0;
 }
-
-/* Conteúdo central */
 .card{
   position:relative;
   z-index:1;
-  max-width:500px;
+  max-width:520px;
   animation:fadeInUp 1s ease;
 }
-
-/* Texto */
 .card h1{
   font-size:32px;
   margin-bottom:15px;
@@ -50,8 +44,6 @@ body::before{
   margin-bottom:20px;
   text-shadow: 1px 1px 8px rgba(0,0,0,0.7);
 }
-
-/* FOTO DO EVENTO */
 .event-photo{
   width:100%;
   border-radius:15px;
@@ -64,8 +56,6 @@ body::before{
   transform: scale(1.05);
   box-shadow:0 0 35px rgba(225,48,108,0.9);
 }
-
-/* BOTÃO INSTAGRAM */
 .instagram-button{
   display:inline-block;
   background:#E1306C;
@@ -78,20 +68,35 @@ body::before{
   box-shadow:0 0 20px rgba(225,48,108,0.6);
   animation:pulse 1.5s infinite alternate;
   transition: all 0.3s ease;
+  margin-top:10px;
 }
 .instagram-button:hover{
   transform: scale(1.08);
   box-shadow:0 0 30px rgba(225,48,108,1);
 }
-
-/* RESPONSIVO */
+.devocional{
+  text-align:left;
+  background: rgba(0,0,0,0.4);
+  padding:20px;
+  border-radius:15px;
+  margin-bottom:20px;
+  line-height:1.6;
+}
+.devocional h2{
+  font-size:28px;
+  margin-bottom:10px;
+  text-align:center;
+}
+.devocional p{
+  font-size:18px;
+}
 @media(max-width:520px){
   .card h1{font-size:28px;}
   .card p{font-size:16px;}
   .instagram-button{font-size:18px;padding:14px 28px;}
+  .devocional h2{font-size:24px;}
+  .devocional p{font-size:16px;}
 }
-
-/* ANIMAÇÕES */
 @keyframes fadeInUp{
   0%{opacity:0;transform:translateY(40px);}
   100%{opacity:1;transform:translateY(0);}
@@ -110,6 +115,20 @@ body::before{
 
   <!-- IMAGEM DO EVENTO -->
   <img src="Gk.png" alt="Foto do culto" class="event-photo">
+
+  <!-- TEXTO DO DEVOCIONAL -->
+  <div class="devocional">
+    <h2>PARE • PENSE • SIGA</h2>
+    <p>🛑 PARE<br>
+       ⚠️ PENSE<br>
+       🟢 SIGA
+    </p>
+    <p>⚠️ <b>“Alegra-te, jovem… mas sabe que de todas estas coisas Deus te pedirá contas..”</b><br>
+       📖 Eclesiastes 11:9
+    </p>
+    <p>A juventude é um tempo de alegria. Mas Deus nos lembra que cada escolha tem um caminho. Alegre-se, viva, sorria… mas nunca se esqueça de Deus. Amém?</p>
+    <p>Que a Palavra pregada neste <b>4º Pré Congresso do Geração Kadosh</b> permaneça em seu coração e na sua conduta.</p>
+  </div>
 
   <!-- BOTÃO DO INSTAGRAM -->
   <a href="https://www.instagram.com/kadosh_saleluz" target="_blank" class="instagram-button">
